@@ -1,4 +1,3 @@
-//
 //  main.swift
 //  AutomobileList
 //
@@ -8,5 +7,15 @@
 
 import Foundation
 
-print("Hello, World!")
 
+
+func main () {
+    let date:Date = Date.init(timeIntervalSinceNow: 20)
+
+    let markToy = Automobile(yearOfProducing: date, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
+    
+    print(markToy.brand)
+}
+
+
+main()
