@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		53A86D462510705500713C3A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D452510705500713C3A /* main.swift */; };
 		53A86D4D25107FAD00713C3A /* Automobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D4C25107FAD00713C3A /* Automobile.swift */; };
-		53A86D4F25108CE700713C3A /* AutomobileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D4E25108CE700713C3A /* AutomobileList.swift */; };
+		53A86D512510A2B300713C3A /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D502510A2B300713C3A /* CarList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,7 @@
 		53A86D422510705500713C3A /* AutomobileList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AutomobileList; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A86D452510705500713C3A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		53A86D4C25107FAD00713C3A /* Automobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automobile.swift; sourceTree = "<group>"; };
-		53A86D4E25108CE700713C3A /* AutomobileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomobileList.swift; sourceTree = "<group>"; };
+		53A86D502510A2B300713C3A /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			children = (
 				53A86D452510705500713C3A /* main.swift */,
 				53A86D4C25107FAD00713C3A /* Automobile.swift */,
-				53A86D4E25108CE700713C3A /* AutomobileList.swift */,
+				53A86D502510A2B300713C3A /* CarList.swift */,
 			);
 			path = AutomobileList;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53A86D4F25108CE700713C3A /* AutomobileList.swift in Sources */,
+				53A86D512510A2B300713C3A /* CarList.swift in Sources */,
 				53A86D4D25107FAD00713C3A /* Automobile.swift in Sources */,
 				53A86D462510705500713C3A /* main.swift in Sources */,
 			);

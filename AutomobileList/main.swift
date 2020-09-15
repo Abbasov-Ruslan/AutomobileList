@@ -14,7 +14,16 @@ func main () {
 
     let markToy = Automobile(yearOfProducing: date, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
     
-    print(markToy.brand)
+    let carArray = [markToy]
+    
+    let carList = CarList(carArray: carArray )
+    
+    carList.changeAll(numberOfCar: 0)
+    
+    carList.printCharactericstics(numberOfCar: 0)
+    
+    carList.changeYear(numberOfCar: 1)
+    
 }
 
 
