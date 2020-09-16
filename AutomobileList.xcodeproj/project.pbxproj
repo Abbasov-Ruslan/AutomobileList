@@ -10,6 +10,7 @@
 		53A86D462510705500713C3A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D452510705500713C3A /* main.swift */; };
 		53A86D4D25107FAD00713C3A /* Automobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D4C25107FAD00713C3A /* Automobile.swift */; };
 		53A86D512510A2B300713C3A /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D502510A2B300713C3A /* CarList.swift */; };
+		53A86D542511ECC000713C3A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D532511ECC000713C3A /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		53A86D452510705500713C3A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		53A86D4C25107FAD00713C3A /* Automobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automobile.swift; sourceTree = "<group>"; };
 		53A86D502510A2B300713C3A /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
+		53A86D532511ECC000713C3A /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +47,6 @@
 		53A86D392510705500713C3A = {
 			isa = PBXGroup;
 			children = (
-				53A86D522511DA3100713C3A /* New Group */,
 				53A86D442510705500713C3A /* AutomobileList */,
 				53A86D432510705500713C3A /* Products */,
 			);
@@ -62,18 +63,12 @@
 		53A86D442510705500713C3A /* AutomobileList */ = {
 			isa = PBXGroup;
 			children = (
+				53A86D532511ECC000713C3A /* Menu.swift */,
 				53A86D452510705500713C3A /* main.swift */,
 				53A86D4C25107FAD00713C3A /* Automobile.swift */,
 				53A86D502510A2B300713C3A /* CarList.swift */,
 			);
 			path = AutomobileList;
-			sourceTree = "<group>";
-		};
-		53A86D522511DA3100713C3A /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +131,7 @@
 			files = (
 				53A86D512510A2B300713C3A /* CarList.swift in Sources */,
 				53A86D4D25107FAD00713C3A /* Automobile.swift in Sources */,
+				53A86D542511ECC000713C3A /* Menu.swift in Sources */,
 				53A86D462510705500713C3A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

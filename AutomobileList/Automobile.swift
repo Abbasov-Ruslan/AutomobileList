@@ -9,7 +9,7 @@
 import Foundation
 
 
- open class Automobile {
+    class Automobile {
     
     // MARK: - Private Properties
     
