@@ -18,17 +18,13 @@ func main () {
     
     let arrayOfCars = [car1, car2, car3]
     
-    let carSaverArray = [car1, car2, car3]
-    
-    let carList2 = CarList(carArray: arrayOfCars,carSaveArray: carSaverArray)
+    let carList2 = CarList(carArray: arrayOfCars)
         
     let menu2 = menu()
     
     var counter = "1"
     
     while counter != "-1" {
-
-        
         menu2.printMenu()
         
         menu2.chooseAction(listOfCar: carList2)
@@ -39,11 +35,6 @@ func main () {
         print("If you eant to continue press 1")
         
         counter = readLine() ?? "1"
-        
-        carList2.saveFile(array: carSaverArray)
-        
-    
-        
     }
     
         

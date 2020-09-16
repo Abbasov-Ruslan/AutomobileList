@@ -8,15 +8,15 @@
 
 import Foundation
 
-//let markToy = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
-//   
-//   let suzuki = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
-//   
-//   let mark2 = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
-//   
-//   var carArray = [markToy, suzuki, mark2]
-//   
-//   let carList = CarList(carArray: carArray)
+let markToy = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
+   
+   let suzuki = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
+   
+   let mark2 = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
+   
+   let carArray = [markToy, suzuki, mark2]
+   
+   let carList = CarList(carArray: carArray )
 
 
 class CarList {
@@ -25,13 +25,10 @@ class CarList {
     
     var carArray: [Automobile]
     
-    var carSaverArray:[Automobile]
-    
     // MARK: - Initializers
     
-    init(carArray:Array<Automobile>, carSaveArray:Array<Automobile>) {
+    init(carArray:Array<Automobile>) {
         self.carArray = carArray
-        self.carSaverArray = carSaveArray
     }
     
     // MARK: - Public Methods
@@ -201,24 +198,6 @@ class CarList {
             print("put right number")
             return nil
         }
-    }
-    
-    
-    func saveFile(array:[Automobile]) {
-        
-
-        do {
-        let carArray = array
-        var userDefaults = UserDefaults.standard
-        let encodedData: Data = try NSKeyedArchiver.archivedData(withRootObject: carArray, requiringSecureCoding: true)
-        userDefaults.set(encodedData, forKey: "carArraySave")
-        userDefaults.synchronize()
-        }   catch {print(Error.self)}
-        
-        
-        
-//        let decoded  = userDefaults.data(forKey: "carArraySave")
-//        let decodedTeams = NSKeyedUnarchiver.unarchiveObject(with: decoded!) as! [Automobile]
     }
     
     
