@@ -8,7 +8,7 @@
 
 import Foundation
 
- class CarList {
+  open class CarList {
     
     // MARK: - Private Properties
     
@@ -33,12 +33,14 @@ import Foundation
     }
     
     func deleteCar(numberOfCar: Int) -> Bool {
+        let numberOfCar = numberOfCar - 1
         carArray.remove(at: numberOfCar)
         return true
     }
     
     func editCarInfo(numberOfCar: Int) -> Bool {
         
+        let numberOfCar = numberOfCar - 1
         printAllChoices()
         
         let counter  = Int(readLine() ?? "1")
@@ -53,7 +55,7 @@ import Foundation
         case 4:
             changeCarType(numberOfCar: numberOfCar)
         case 5:
-            changeBrand(numberOfCar:numberOfCar)
+            changeAll(numberOfCar:numberOfCar)
         default:
             print("Put right number")
         }
@@ -67,11 +69,11 @@ import Foundation
     
     func printAllChoices () {
         print("Which characterics do you want to edit")
-        print("1 - brand",
-        "2 - model",
-        "3 - year",
-        "4 - type",
-        "5 - all"
+        print(" 1 - brand\n",
+        "2 - model\n",
+        "3 - year\n",
+        "4 - type\n",
+        "5 - all\n"
         )
     }
     
@@ -100,15 +102,9 @@ import Foundation
     
     func changeYear (numberOfCar:Int) {
         print("put car's year")
-        let isoDate = "2016-04-14T10:44:00+0000"
-        let dateFormatter = ISO8601DateFormatter()
-        let date = dateFormatter.date(from:isoDate)!
+        let carYear = Int(readLine() ?? "2012")
+        carArray[numberOfCar].year = carYear ?? 2012
         
-        let carYear =  readLine()
-        let secondDateFormatter = DateFormatter()
-        secondDateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
-        let secondDate = dateFormatter.date(from: carYear ?? "28.10.2012")
-        carArray[numberOfCar].year = secondDate ?? date
     }
     
     func changeCarType(numberOfCar:Int) {

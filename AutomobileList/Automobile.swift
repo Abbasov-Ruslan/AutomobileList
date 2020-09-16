@@ -9,7 +9,7 @@
 import Foundation
 
 
- class Automobile {
+ open class Automobile {
     
     // MARK: - Private Properties
     
@@ -17,14 +17,14 @@ import Foundation
         case Hatchback, Sedan, MUV, Coupe, Convertible, Wagon, Van, Jeep
     }
 
-    var year: Date
-    var brand: String
-    var model: String
-    var type: TypeOfBulk
+    internal var year: Int
+    internal var brand: String
+    internal var model: String
+    internal var type: TypeOfBulk
     
     // MARK: - Initializers
     
-    init(yearOfProducing: Date, carBrand: String, carModel: String, typeOfCar:TypeOfBulk ) {
+    init(yearOfProducing: Int, carBrand: String, carModel: String, typeOfCar:TypeOfBulk ) {
         self.year = yearOfProducing
         self.brand = carBrand
         self.model = carModel

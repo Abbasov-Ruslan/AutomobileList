@@ -8,21 +8,21 @@
 import Foundation
 
 
-
 func main () {
-    let date:Date = Date.init(timeIntervalSinceNow: 20)
 
-    let markToy = Automobile(yearOfProducing: date, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
+    let markToy = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
     
     let carArray = [markToy]
     
     let carList = CarList(carArray: carArray )
     
-    carList.changeAll(numberOfCar: 0)
+    carList.editCarInfo(numberOfCar: 1)
     
-    carList.printCharactericstics(numberOfCar: 0)
+    print(markToy.year)
     
-    carList.changeYear(numberOfCar: 1)
+    carList.editCarInfo(numberOfCar: 1)
+    
+    
     
 }
 
