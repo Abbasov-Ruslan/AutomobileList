@@ -41,23 +41,26 @@ class menu {
         switch counter {
         case "1":
             print("put number of car, that you want to see\n")
-            let numOfCar = Int(readLine() ?? "1") ?? 1
             listOfCar.printAllCars()
+            if let numOfCar = Int(readLine()!) {
             listOfCar.printCharactericstics(numberOfCar: numOfCar)
+            } else { print("You didn't put anu number, try again") }
         case "2":
             listOfCar.addNewCar()
             listOfCar.printAllCars()
         case "3":
-            print("put number of the car, that you want to delete from list")
-            let numOfCar = Int(readLine() ?? "1") ?? 1
             listOfCar.printAllCars()
+            print("put number of the car, that you want to delete from list")
+            if let numOfCar = Int(readLine()!) {
             listOfCar.deleteCar(numberOfCar: numOfCar)
             listOfCar.printAllCars()
+            } else { print("You didn't put anu number, try again") }
         case "4":
             listOfCar.printAllCars()
             print("put number of the car, which iformation you want to edit")
-            let numOfCar = Int(readLine() ?? "1") ?? 1
+            if let numOfCar = Int(readLine()!) {
             listOfCar.editCarInfo(numberOfCar: numOfCar)
+            } else { print("You didn't put anu number, try again") }
         case "5":
             listOfCar.printAllCars()
         case "exit":

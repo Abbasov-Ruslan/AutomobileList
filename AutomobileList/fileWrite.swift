@@ -9,7 +9,6 @@
 import Foundation
 
 
-
 func saveData(carArray:[Automobile]) {
     
     let file = "automobileArraySave.txt"
@@ -44,7 +43,6 @@ func saveData(carArray:[Automobile]) {
         catch {/* error handling here */}
         
         
-        
     }
 }
 
@@ -56,21 +54,27 @@ func readData () -> [Automobile] {
     
     if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
         let path = dir.appendingPathComponent(file)
-    
+        
+        
+        
         do {
             let text2 = try String(contentsOf: path, encoding: .utf8)
             let result: [String] =  text2.components(separatedBy: ["\n"])
             for i in 0...result.capacity - 1 {
                 let result2: [String] =  result[i].components(separatedBy: [" "])
-                 var carFromFile = Automobile(yearOfProducing: Int(result2[2])!, carBrand: result2[0], carModel: result2[1], typeOfCar: stringToType(str: result2[3])!)
+                if result2[0]  != ""  {
+                var carFromFile = try Automobile(yearOfProducing: Int(result2[2])!, carBrand: result2[0], carModel: result2[1], typeOfCar:
+                    stringToType(str: result2[3])!)
                 carArray.append(carFromFile)
+            } else {
+                    carArray = [Automobile(yearOfProducing: 2019, carBrand: "Totyota", carModel: "GTR", typeOfCar: Automobile.TypeOfBulk.Sedan), Automobile(yearOfProducing: 2009, carBrand: "Totyota", carModel: "Granvia", typeOfCar: Automobile.TypeOfBulk.Van), Automobile(yearOfProducing: 2013, carBrand: "Totyota", carModel: "Pajero", typeOfCar: Automobile.TypeOfBulk.Jeep)]
+                    }
             }
-            
         }
         catch {/* error handling here */}
+     
         
     }
-    
     return carArray
     
 }

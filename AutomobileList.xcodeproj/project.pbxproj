@@ -27,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		53113451251769A300BF7120 /* automobileArraySave.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = automobileArraySave.txt; path = ../../../../../Documents/automobileArraySave.txt; sourceTree = "<group>"; };
 		53A86D422510705500713C3A /* AutomobileList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AutomobileList; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A86D452510705500713C3A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		53A86D4C25107FAD00713C3A /* Automobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automobile.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		53A86D442510705500713C3A /* AutomobileList */ = {
 			isa = PBXGroup;
 			children = (
+				53113451251769A300BF7120 /* automobileArraySave.txt */,
 				53A86D532511ECC000713C3A /* Menu.swift */,
 				53A86D452510705500713C3A /* main.swift */,
 				53A86D4C25107FAD00713C3A /* Automobile.swift */,

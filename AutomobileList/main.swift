@@ -19,11 +19,9 @@ func main () {
     var arrayOfCars:[Automobile] = readData()
     
     
-    var carList2 = CarList(carArray: arrayOfCars)
+    var carList2 = CarList(carArray: readData())
         
     let menu2 = menu()
-    
-    var counter = "1"
     
     
     
@@ -33,6 +31,7 @@ func main () {
         
         menu2.chooseAction(listOfCar: carList2)
         
+        if menu2.counter != "exit" {
         print("Press enter to continue")
         
         readLine()
@@ -43,8 +42,8 @@ func main () {
 
                         
 
-
                     """)
+        }
         
     }
     
