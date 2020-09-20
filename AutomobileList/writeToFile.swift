@@ -37,7 +37,7 @@ func saveData(carArray:[Automobile]) {
                 summ.remove(at: summ.index(before: summ.endIndex))
                 try summ.write(to: path, atomically: true, encoding: .utf8)
             } else{ try summ.write(to: path, atomically: true, encoding: .utf8)}
-        } catch {/* error handling here */}
+        } catch {}
         
         
     }
