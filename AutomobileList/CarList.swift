@@ -8,18 +8,7 @@
 
 import Foundation
 
-let markToy = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
-   
-   let suzuki = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
-   
-   let mark2 = Automobile(yearOfProducing: 2013, carBrand: "Toyota", carModel: "Mark", typeOfCar: Automobile.TypeOfBulk.Sedan)
-   
-   let carArray = [markToy, suzuki, mark2]
-   
-   let carList = CarList(carArray: carArray )
-
-
-class CarList {
+class CarList:Codable {
     
     // MARK: - Private Properties
     

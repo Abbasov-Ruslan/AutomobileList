@@ -11,7 +11,9 @@
 		53A86D4D25107FAD00713C3A /* Automobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D4C25107FAD00713C3A /* Automobile.swift */; };
 		53A86D512510A2B300713C3A /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D502510A2B300713C3A /* CarList.swift */; };
 		53A86D542511ECC000713C3A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D532511ECC000713C3A /* Menu.swift */; };
-		53A86D5825125DD500713C3A /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D5725125DD500713C3A /* Saver.swift */; };
+		53C904262514FAE5009BEAC0 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C904252514FAE5009BEAC0 /* Json.swift */; };
+		53C904282514FDA6009BEAC0 /* myJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C904272514FDA6009BEAC0 /* myJson.swift */; };
+		53EF294C2513B3A3009EBE16 /* fileWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EF294B2513B3A3009EBE16 /* fileWrite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +34,9 @@
 		53A86D4C25107FAD00713C3A /* Automobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automobile.swift; sourceTree = "<group>"; };
 		53A86D502510A2B300713C3A /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 		53A86D532511ECC000713C3A /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		53A86D5725125DD500713C3A /* Saver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
+		53C904252514FAE5009BEAC0 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		53C904272514FDA6009BEAC0 /* myJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myJson.swift; sourceTree = "<group>"; };
+		53EF294B2513B3A3009EBE16 /* fileWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileWrite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,9 @@
 				53A86D452510705500713C3A /* main.swift */,
 				53A86D4C25107FAD00713C3A /* Automobile.swift */,
 				53A86D502510A2B300713C3A /* CarList.swift */,
-				53A86D5725125DD500713C3A /* Saver.swift */,
+				53EF294B2513B3A3009EBE16 /* fileWrite.swift */,
+				53C904252514FAE5009BEAC0 /* Json.swift */,
+				53C904272514FDA6009BEAC0 /* myJson.swift */,
 			);
 			path = AutomobileList;
 			sourceTree = "<group>";
@@ -134,8 +140,10 @@
 			files = (
 				53A86D512510A2B300713C3A /* CarList.swift in Sources */,
 				53A86D4D25107FAD00713C3A /* Automobile.swift in Sources */,
-				53A86D5825125DD500713C3A /* Saver.swift in Sources */,
+				53C904282514FDA6009BEAC0 /* myJson.swift in Sources */,
 				53A86D542511ECC000713C3A /* Menu.swift in Sources */,
+				53C904262514FAE5009BEAC0 /* Json.swift in Sources */,
+				53EF294C2513B3A3009EBE16 /* fileWrite.swift in Sources */,
 				53A86D462510705500713C3A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
