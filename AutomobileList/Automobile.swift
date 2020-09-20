@@ -9,11 +9,11 @@
 import Foundation
 
 
-class Automobile:Codable {
+class Automobile{
     
     // MARK: - Private Properties
     
-    enum TypeOfBulk:Int, Codable {
+    enum TypeOfBulk:Int {
         case Hatchback, Sedan, MUV, Coupe, Convertible, Wagon, Van, Jeep
     }
 

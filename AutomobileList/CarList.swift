@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CarList:Codable {
+class CarList {
     
     // MARK: - Private Properties
     
@@ -23,16 +23,18 @@ class CarList:Codable {
     // MARK: - Public Methods
     
     func printCharactericstics(numberOfCar: Int) {
-        var numberOfCarInArray = numberOfCar - 1
-        if carArray.capacity >= numberOfCar {
+        let numberOfCarInArray = numberOfCar - 1
+        if carArray.count >= numberOfCar {
             print(numberOfCar,"." , carArray[numberOfCarInArray].brand, carArray[numberOfCarInArray].model, carArray[numberOfCarInArray].year, carArray[numberOfCarInArray].type,"\n")
         } else { print ("You've put wrong data, try again")}
     }
     
     func printAllCars() {
-        for numberOfCarInArray in 1...carArray.count  {
-            printCharactericstics(numberOfCar: numberOfCarInArray)
-        }
+        if carArray.count > 0 {
+            for numberOfCarInArray in 1...carArray.count  {
+                printCharactericstics(numberOfCar: numberOfCarInArray)
+            }
+        } else {print("Empty list")}
     }
     
     func addNewCar() -> Bool {
@@ -54,33 +56,33 @@ class CarList:Codable {
     
     func deleteCar(numberOfCar: Int) -> Bool {
         let numberOfCarInArray = numberOfCar - 1
-        if carArray.capacity >= numberOfCar {
+        if carArray.count >= numberOfCar {
             carArray.remove(at: numberOfCarInArray)
         } else { print ("You've put wrong data, try again")}
         return true
     }
     
     func editCarInfo(numberOfCar: Int) -> Bool {
-        if carArray.capacity >= numberOfCar {
-        
-        let numberOfCarInArray = numberOfCar - 1
-        printAllChoices()
-        
-        if let counter  = Int(readLine()!) {
-    
-        switch counter {
-        case 1:
-            changeBrand(numberOfCar:numberOfCarInArray)
-        case 2:
-            changeModel(numberOfCar:numberOfCarInArray)
-        case 3:
-            changeYear(numberOfCar: numberOfCarInArray)
-        case 4:
-            changeCarType(numberOfCar: numberOfCarInArray)
-        case 5:
-            changeAll(numberOfCar:numberOfCarInArray)
-        default:
-            print("Put right number")
+        if carArray.count >= numberOfCar {
+            
+            let numberOfCarInArray = numberOfCar - 1
+            printAllChoices()
+            
+            if let counter  = Int(readLine()!) {
+                
+                switch counter {
+                case 1:
+                    changeBrand(numberOfCar:numberOfCarInArray)
+                case 2:
+                    changeModel(numberOfCar:numberOfCarInArray)
+                case 3:
+                    changeYear(numberOfCar: numberOfCarInArray)
+                case 4:
+                    changeCarType(numberOfCar: numberOfCarInArray)
+                case 5:
+                    changeAll(numberOfCar:numberOfCarInArray)
+                default:
+                    print("Put right number")
                 }
             } else {print("You've put wrong number, try again")}
         } else {print("You've put wrong number, try again")}
@@ -119,7 +121,7 @@ class CarList:Codable {
         print("put car brand")
         let carBrand =  readLine()
         if carBrand != "" {
-        carArray[numberOfCar].brand = carBrand!
+            carArray[numberOfCar].brand = carBrand!
         } else { print("You've put wrong data, try again") }
     }
     
@@ -127,7 +129,7 @@ class CarList:Codable {
         print("put car model")
         let carModel =  readLine()
         if carModel != "" {
-        carArray[numberOfCar].model = carModel!
+            carArray[numberOfCar].model = carModel!
         } else { print("You've put wrong data, try again") }
     }
     
@@ -135,10 +137,10 @@ class CarList:Codable {
         print("put car year")
         let carYear = Int(readLine()!)
         if carYear != nil {
-        carArray[numberOfCar].year = carYear ?? 2012
+            carArray[numberOfCar].year = carYear ?? 2012
         } else { print("You've put wrong number, try again") }
     }
-        
+    
     
     func changeCarType(numberOfCar:Int) {
         print("choose car type")
@@ -179,31 +181,39 @@ class CarList:Codable {
         }
     }
     
+    
     func chooseTypeOfBulk() -> Automobile.TypeOfBulk? {
-        let carType =  Int(readLine() ?? "1")
-        switch carType {
-        case 1:
-            return Automobile.TypeOfBulk.Hatchback
-        case 2:
-            return Automobile.TypeOfBulk.Sedan
-        case 3:
-            return Automobile.TypeOfBulk.MUV
-        case 4:
-            return Automobile.TypeOfBulk.Coupe
-        case 5:
-            return Automobile.TypeOfBulk.Convertible
-        case 6:
-            return Automobile.TypeOfBulk.Wagon
-        case 7:
-            return Automobile.TypeOfBulk.Van
-        case 8:
-            return Automobile.TypeOfBulk.Jeep
-        default:
-            print("put right number")
-            return nil
-        }
+        
+        if let carType =  Int(readLine()!) {
+            if carType > 0 && carType < 8 {
+                switch carType {
+                case 1:
+                    return Automobile.TypeOfBulk.Hatchback
+                case 2:
+                    return Automobile.TypeOfBulk.Sedan
+                case 3:
+                    return Automobile.TypeOfBulk.MUV
+                case 4:
+                    return Automobile.TypeOfBulk.Coupe
+                case 5:
+                    return Automobile.TypeOfBulk.Convertible
+                case 6:
+                    return Automobile.TypeOfBulk.Wagon
+                case 7:
+                    return Automobile.TypeOfBulk.Van
+                case 8:
+                    return Automobile.TypeOfBulk.Jeep
+                default:
+                    print("put right number")
+                    return nil
+                }
+            } else {print("You've put wrong number, try again")}
+        } else {print("You've put wrong number, try again")}
+        return nil
     }
     
-    
-    
 }
+
+
+
+

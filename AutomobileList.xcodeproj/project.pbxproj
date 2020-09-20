@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53A86D462510705500713C3A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D452510705500713C3A /* main.swift */; };
+		531134532517A71F00BF7120 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531134522517A71F00BF7120 /* main.swift */; };
+		53A86D462510705500713C3A /* lifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D452510705500713C3A /* lifeCycle.swift */; };
 		53A86D4D25107FAD00713C3A /* Automobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D4C25107FAD00713C3A /* Automobile.swift */; };
 		53A86D512510A2B300713C3A /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D502510A2B300713C3A /* CarList.swift */; };
 		53A86D542511ECC000713C3A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A86D532511ECC000713C3A /* Menu.swift */; };
-		53EF294C2513B3A3009EBE16 /* fileWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EF294B2513B3A3009EBE16 /* fileWrite.swift */; };
+		53EF294C2513B3A3009EBE16 /* writeToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EF294B2513B3A3009EBE16 /* writeToFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +29,13 @@
 
 /* Begin PBXFileReference section */
 		53113451251769A300BF7120 /* automobileArraySave.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = automobileArraySave.txt; path = ../../../../../Documents/automobileArraySave.txt; sourceTree = "<group>"; };
+		531134522517A71F00BF7120 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		53A86D422510705500713C3A /* AutomobileList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AutomobileList; sourceTree = BUILT_PRODUCTS_DIR; };
-		53A86D452510705500713C3A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		53A86D452510705500713C3A /* lifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifeCycle.swift; sourceTree = "<group>"; };
 		53A86D4C25107FAD00713C3A /* Automobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automobile.swift; sourceTree = "<group>"; };
 		53A86D502510A2B300713C3A /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 		53A86D532511ECC000713C3A /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		53EF294B2513B3A3009EBE16 /* fileWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileWrite.swift; sourceTree = "<group>"; };
+		53EF294B2513B3A3009EBE16 /* writeToFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeToFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				53113451251769A300BF7120 /* automobileArraySave.txt */,
+				531134522517A71F00BF7120 /* main.swift */,
+				53A86D452510705500713C3A /* lifeCycle.swift */,
 				53A86D532511ECC000713C3A /* Menu.swift */,
-				53A86D452510705500713C3A /* main.swift */,
 				53A86D4C25107FAD00713C3A /* Automobile.swift */,
 				53A86D502510A2B300713C3A /* CarList.swift */,
-				53EF294B2513B3A3009EBE16 /* fileWrite.swift */,
+				53EF294B2513B3A3009EBE16 /* writeToFile.swift */,
 			);
 			path = AutomobileList;
 			sourceTree = "<group>";
@@ -136,9 +139,10 @@
 			files = (
 				53A86D512510A2B300713C3A /* CarList.swift in Sources */,
 				53A86D4D25107FAD00713C3A /* Automobile.swift in Sources */,
+				531134532517A71F00BF7120 /* main.swift in Sources */,
 				53A86D542511ECC000713C3A /* Menu.swift in Sources */,
-				53EF294C2513B3A3009EBE16 /* fileWrite.swift in Sources */,
-				53A86D462510705500713C3A /* main.swift in Sources */,
+				53EF294C2513B3A3009EBE16 /* writeToFile.swift in Sources */,
+				53A86D462510705500713C3A /* lifeCycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,20 +31,16 @@ class menu {
         print("Put your number: ")
     }
     
-    
     func chooseAction(listOfCar:CarList) {
-        
         counter = readLine()
-        
         print("\n")
-        
         switch counter {
         case "1":
             print("put number of car, that you want to see\n")
             listOfCar.printAllCars()
             if let numOfCar = Int(readLine()!) {
             listOfCar.printCharactericstics(numberOfCar: numOfCar)
-            } else { print("You didn't put anu number, try again") }
+            } else { print("You've put wrong number, try again") }
         case "2":
             listOfCar.addNewCar()
             listOfCar.printAllCars()
