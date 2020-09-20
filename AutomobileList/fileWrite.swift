@@ -43,15 +43,6 @@ func saveData(carArray:[Automobile]) {
         }
         catch {/* error handling here */}
         
-        //reading
-        
-        
-        
-        do {
-            let text2 = try String(contentsOf: path, encoding: .utf8)
-            print(text2)
-        }
-        catch {/* error handling here */}
         
         
     }
@@ -65,9 +56,7 @@ func readData () -> [Automobile] {
     
     if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
         let path = dir.appendingPathComponent(file)
-        
-        
-        
+    
         do {
             let text2 = try String(contentsOf: path, encoding: .utf8)
             let result: [String] =  text2.components(separatedBy: ["\n"])

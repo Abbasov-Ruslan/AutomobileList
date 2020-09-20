@@ -10,13 +10,14 @@ import Foundation
 
 func main () {
 
-    let car1 = Automobile(yearOfProducing: 2019, carBrand: "Totyota", carModel: "GTR", typeOfCar: Automobile.TypeOfBulk.Sedan)
+//    let car1 = Automobile(yearOfProducing: 2019, carBrand: "Totyota", carModel: "GTR", typeOfCar: Automobile.TypeOfBulk.Sedan)
+//
+//    let car2 = Automobile(yearOfProducing: 2009, carBrand: "Totyota", carModel: "Granvia", typeOfCar: Automobile.TypeOfBulk.Van)
+//
+//    let car3 = Automobile(yearOfProducing: 2013, carBrand: "Totyota", carModel: "Pajero", typeOfCar: Automobile.TypeOfBulk.Jeep)
     
-    let car2 = Automobile(yearOfProducing: 2009, carBrand: "Totyota", carModel: "Granvia", typeOfCar: Automobile.TypeOfBulk.Van)
+    var arrayOfCars:[Automobile] = readData()
     
-    let car3 = Automobile(yearOfProducing: 2013, carBrand: "Totyota", carModel: "Pajero", typeOfCar: Automobile.TypeOfBulk.Jeep)
-    
-    var arrayOfCars:[Automobile] = []
     
     var carList2 = CarList(carArray: arrayOfCars)
         
@@ -24,32 +25,38 @@ func main () {
     
     var counter = "1"
     
-//    readJsonFile()
     
-    while counter != "-1" {
+    
+    while menu2.counter != "exit" {
+        
         menu2.printMenu()
         
         menu2.chooseAction(listOfCar: carList2)
         
-        print("\n")
+        print("Press enter to continue")
+        
+        readLine()
         
         print("""
-        If you want to close programm put -1
-        If you want to continue press 1
-        """)
+
+
+
+                        
+
+
+                    """)
         
-        counter = readLine() ?? "1"
     }
     
+    saveData(carArray:carList2.carArray)
 
 //    saveData(carArray: arrayOfCars)
     
+    //saveData(carArray:arrayOfCars)
     
-    var arrayOfCars2:[Automobile] = readData()
     
-    var carList3 = CarList(carArray: arrayOfCars2)
     
-    carList3.printAllCars()
+    
     
 }
 
